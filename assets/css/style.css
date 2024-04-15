@@ -11,7 +11,8 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  /* color: #272829; */
+  background-image: url('assets/.testimonial-img');
 }
 
 a {
@@ -32,7 +33,14 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+.profile {
+  padding-top: 50%;
+}
 
+.social-links .mt-3 .text-center
+{
+  margin-left:5px !important;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -241,7 +249,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/background-1.jpg") top center;
   background-size: cover;
 }
 
@@ -1103,4 +1111,151 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+/*--------------------------------------------------------------
+#Accordian
+--------------------------------------------------------------*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.portfolio {
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f9f9f9; */
+}
+
+.tab {
+  background-color: #fff;
+  border: none;
+  padding: 15px 25px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #eaeaea;
+}
+
+.tabcontent {
+  padding: 20px;
+}
+
+.tabcontent img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tabcontent p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+#portfolio-flters {
+  list-style: none;
+  padding: 0;
+}
+
+#portfolio-flters li {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+#portfolio-flters li:hover {
+  color: #666;
+}
+
+
+
+.nav-border {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-border a {
+  text-transform: uppercase;
+  transition: transform 150ms var(--ease-bounce-4);
+}
+.nav-border:has(a:hover) a:not(:hover):not(:first-child) {
+  transform: scale(0.95);
+}
+.nav-border button {
+  background-color: #242121;
+}
+.nav-border button:hover {
+  background-color: #444141;
+}
+.nav-border a:first-child,
+.nav-border button {
+  font-family: "K2D";
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.circle {
+  -webkit-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.3),
+    0px 0px 100px 0px rgba(255, 255, 255, 0.9) inset;
+  background-image: var(--noise-3),
+    linear-gradient(
+      135deg,
+      transparent 35%,
+      rgba(255, 255, 255, 0.21),
+      transparent 65%
+    ),
+    linear-gradient(135deg, #3cf3ff 15%, #fa00ff);
+  filter: var(--noise-filter-1);
+}
+.primary-grad {
+  background-image: var(--noise-3),
+    linear-gradient(0deg, rgb(60, 243, 255), #3cf3ff);
+}
+.second-grad {
+  background-image: var(--noise-3), linear-gradient(0deg, #fa00ff, #fa00ff);
+}
+.bg-secondary {
+  background-color: rgb(255, 0, 255);
+}
+.fill-secondary {
+  fill: rgb(250, 0, 255);
+}
+.third-grad {
+  background-image: var(--noise-3), linear-gradient(0deg, #ff8000, #ff8000);
+}
+.polka_dots {
+  background-image: radial-gradient(
+    rgba(60, 243, 255, 0.1) 10%,
+    transparent 10%
+  );
+  background-position: 8px 8px;
+  background-size: 16px 16px;
+}
+.cross-spin {
+  transform-origin: calc(0% + 0.9em) calc(0% + 0.9em);
 }
