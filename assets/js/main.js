@@ -260,3 +260,49 @@
   new PureCounter();
 
 })()
+
+
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+var stars = [], // Array that contains the stars
+    FPS = 60, // Frames per second
+    x = 100, // Number of stars
+    mouse = {
+      x: 0,
+      y: 0
+    };  // mouse location
+
+// Push stars to array
+
+for (var i = 0; i < x; i++) {
+  stars.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    radius: Math.random() * 1 + 1,
+    vx: Math.floor(Math.random() * 50) - 25,
+    vy: Math.floor(Math.random() * 50) - 25
+  });
+}
