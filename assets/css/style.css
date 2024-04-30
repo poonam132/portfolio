@@ -235,9 +235,14 @@ h6 {
   color: white;
 }
 
-.btn-3:hover:after,.btn-3 a:hover:before,.btn-3 a:hover:after,.btn-3:hover:after, .btn-3:hover:before{
+ .btn-3:hover:after,.btn-3 a:hover:before,.btn-3 a:hover:after,.btn-3:hover:after, .btn-3:hover:before{
+  background: #255876;
+}
+
+.donwload-cv-nav .btn-3:hover:after,.donwload-cv-nav .btn-3 a:hover:before,.donwload-cv-nav .btn-3 a:hover:after,.donwload-cv-nav .btn-3:hover:after, .donwload-cv-nav .btn-3:hover:before{
   background: rgb(255 255 255);
 }
+
 
 .tab-demo .frame {
   width: 100%;
@@ -1519,6 +1524,7 @@ p {
   outline: none;
 }
 
+
 /* 3 */
 .btn-3 {
   background: #255876;
@@ -1563,6 +1569,7 @@ p {
 .btn-3:hover {
   background: transparent;
   box-shadow: none;
+  /* border: 1px solid #000; */
 }
 
 .btn-3:hover:before {
