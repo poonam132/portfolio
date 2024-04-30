@@ -906,7 +906,14 @@ section {
   background: #149ddd;
   color: #fff;
 }
-
+.email a
+{
+  color:#000;
+}
+.phone a
+{
+  color:#000;
+}
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
